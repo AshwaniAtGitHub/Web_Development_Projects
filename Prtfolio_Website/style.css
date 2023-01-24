@@ -7,6 +7,10 @@
     font-family: "Be Vietnam Pro", sans-serif;
 }
 
+:root{
+    --bgOrange: #e84949;
+}
+
 .wrapper{
     height: 100vh;
     overflow-x: hidden;
@@ -14,7 +18,7 @@
 }
 
 .container{
-    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;  
 
 }
@@ -58,3 +62,211 @@
     font-weight: bold;
 }
 
+.heroSection{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5rem;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+}
+
+.fadedText{
+    user-select: none;
+    font-size: 7em;
+    color: rgb(231, 231, 231);
+
+    bottom: -16%;
+    left: -5%;
+    font-weight: bold;
+    transition: all 3s;
+    position: absolute;
+}
+
+.heroSectionLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.heroSectionHeading{
+    font-size: 35px;
+    color: #343d68;
+    font-weight: 500;
+}
+
+.role{
+    color: #4e45d5;
+    font-weight: 800;
+}
+
+.heroSectionSubHeading{
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.heroSectionDescription{
+    margin-top: 1rem;
+    width: 70%;
+    font-weight: 500;
+}
+
+.btnPink{
+    background-color: #e84949;
+    width: fit-content;
+    padding: 0.8rem 2.3rem;
+    color: white;
+    font-size: 18px;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    border: 3px solid transparent;
+
+}
+.btnPink::before{
+    content:"";
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+    z-index: -1;
+
+}
+
+.btnPink:hover::before{
+    transform: scaleX(1);
+}
+
+.btnPink:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.heroSectionRight{
+    position:relative;
+}
+.absolute{
+    position: absolute;
+}
+.icons{
+    z-index: 1;
+}
+.userImage{
+    padding: 2.5rem;
+    transition: all 1s;
+    animation: scaleImage 5s linear infinite;
+}
+.userImage img{
+    z-index: -1;
+}
+
+@keyframes scaleImage{
+    0%{
+        filter: grayscale(1);
+        transform: scale(1);
+    }
+    50%{
+        filter: grayscale(0);
+        transform: scale(0.9);
+        box-shadow: 3px 3px 10px black;
+    }
+    100%{
+        filter: grayscale(1);
+        transform: scale(1);
+    }
+}
+
+.iconDots{
+    bottom: -1rem;
+    right: 0;
+    animation-name: dotsAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dotsAnimation{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.iconCube{
+    top: -0.8rem;
+    right: 1em;
+    animation-name: cubeAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cubeAnimation{
+    0%{
+        transform: rotateY(0deg) translateY(0px);
+    }
+    50%{
+        transform: rotateY(180deg) translateY(-12px);
+    }
+    100%{
+        transform: rotateY(0deg) translateY(0px);
+    }
+}
+
+.iconCircle{
+    left: 0;
+    bottom: 0;
+    animation-name: circleAnimation;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes circleAnimation{
+   
+    50%{
+        left: 5%;
+        bottom: 10%;
+    }
+   
+}
+
+.iconZigzag{
+    top: 1.5em;
+    left: -0.3em;
+    animation: zigzagAnimation 5s ease-in infinite;
+}
+@keyframes zigzagAnimation{
+    50%{
+        left: 5%;
+        bottom: 2%;
+    }
+}
+
+.iconPlus{
+    top: -0.8rem;
+    left: 50%;
+    animation-name: plusAnimation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes plusAnimation{
+    50%{
+        top: 3%;
+        left: 48%;
+    }
+}
