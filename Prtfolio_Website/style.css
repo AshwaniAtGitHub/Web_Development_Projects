@@ -270,3 +270,171 @@
         left: 48%;
     }
 }
+
+.projectSection{
+    background-color: rgb(231, 231, 231);
+    margin-top: 4rem;
+
+}
+
+.pageHeader{
+    color: var(--bgOrange);
+    font-size: 90px;
+    text-align: center;
+    padding-top: 30px;
+}
+.projectContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.projectCard{
+    width: 90%;
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 0px 0px 40px #1f1f1f;
+}
+.projectCard::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1f1f1f9a;
+    z-index: 0;
+    transform: scaleX(1);
+}
+
+.projectCard::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s;
+    z-index: 1;
+}
+
+.projectCard:hover::before{
+    transform: scaleX(1);
+}
+
+#project1{
+    background-image: url(img/projects/Project1.png);
+}
+#project2{
+    margin-left: 10%;
+    background-image: url(img/projects/Project2.png);
+}
+#project3{
+    background-image: url(img/projects/Project3.png);
+}
+#project4{
+    margin-left: 10%;
+    background-image: url(img/projects/Project4.png);
+}
+
+.projectNumber{
+    position: absolute;
+    font-size: 200px;
+    font-weight: 600;
+    color: white;
+    z-index: 2;
+    display: none;
+}
+
+.projectCard:hover .projectNumber{
+    display: block;
+}
+
+.projectNumberLeft{
+    right: -40px;
+    top: -45px;
+}
+
+.projectNumberRight{
+    left: -40px;
+    top: -45px;
+}
+
+.projectContent{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2em;
+    bottom: 20%;
+    z-index: 3;
+    gap: 1em;
+    transition: all 0.4s;
+}
+
+.projectCard:hover .projectContent{
+    transform: scale(1.1);
+}
+
+.projectContentRight{
+    right: 10%;
+}
+.projectContentLeft{
+    left: 10%;
+
+}
+
+.projectSkillContainer{
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.projectSkill{
+    width: 40px;
+}
+
+.projectHeading{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+
+.projectSubHeading{
+    width: 70%;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.btnGroup{
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+}
+
+.buttonProject{
+    border: none;
+}
+
+.icon{
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+    transition: all 0.4s;
+}
+
+.icon:hover{
+    color: var(--bgOrange);
+}
+
+
