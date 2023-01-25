@@ -438,3 +438,59 @@
 }
 
 
+@media (max-width:1300px) {
+    .pageHeader {
+      padding-top: 30px;
+      color: var(--bgOrange);
+      text-align: center;
+      font-size: 40px;
+    }
+    .projectContainer {
+      padding: 5px;
+      margin: 10px;
+      gap: 60px;
+    }
+    .projectCard {
+      width: 100%;
+      height: 300px;
+    }
+    .projectCard {
+      background-size: cover;
+      background-position: center;
+    }
+    .projectContent {
+      scale: 0.5;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+    .projectContentLeft {
+      left: 0;
+    }
+    .projectHeading {
+      font-size: 40px;
+      width: 100%;
+    }
+    .projectSubHeading {
+      width: 100%;
+    }
+    #project2 {
+      margin-left: 0;
+    }
+    #project4 {
+      margin-left: 0;
+    }
+    .projectSkillContainer {
+      width: 100%;
+    }
+    .projectSkill {
+      width: 35px;
+    }
+    .projectCard:hover .projectNumber {
+      display: none;
+    }
+    .projectCard:hover .projectContent {
+      scale: 0.55;
+    }
+  }
