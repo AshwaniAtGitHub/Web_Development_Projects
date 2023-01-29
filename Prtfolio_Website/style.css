@@ -622,10 +622,6 @@
   }
 
 
-
-
-
-
   .contactus-container{
     width: 100%;
     background-color: rgb(231, 231, 231);
@@ -696,4 +692,31 @@
   .submit-icon{
     padding: 0 1rem;
     font-size: 1.3rem;
+  }
+
+
+  @media (max-width: 1300px) {
+    .contactus-heading {
+      font-size: 40px;
+      text-align: center;
+      padding: 15px 10px;
+    }
+    .contactus-subHeading {
+      font-size: 20px;
+      padding: 0 10px;
+      text-align: center;
+    }
+    .form {
+      width: 100%;
+      margin: 0;
+      align-items: center;
+    }
+    .formfield-container {
+      display: flex;
+      align-items: center;
+      width: 90%;
+    }
+    .formfield {
+      width: 90%;
+    }
   }
