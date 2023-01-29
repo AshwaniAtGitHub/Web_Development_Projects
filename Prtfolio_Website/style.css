@@ -586,6 +586,46 @@
     margin: 15px 0;
   }
 
+
+
+  @media (max-width: 1300px) {
+    .skills-container {
+      margin: 0;
+      padding: 2em;
+      flex-direction: column;
+    }
+    .skill-heading {
+      font-size: 40px;
+      font: bold;
+    }
+    .caps {
+      font-size: 60px;
+    }
+    .skill-container-left {
+      width: 100%;
+    }
+    .skill-container-right {
+      width: 100%;
+    }
+    .skills-logo {
+      width: 50px;
+    }
+    .skill-fade-text {
+      display: none;
+    }
+    .skill-subHeading {
+      width: 100%;
+    }
+    .skill-heading::after {
+      bottom: 9%;
+    }
+  }
+
+
+
+
+
+
   .contactus-container{
     width: 100%;
     background-color: rgb(231, 231, 231);
