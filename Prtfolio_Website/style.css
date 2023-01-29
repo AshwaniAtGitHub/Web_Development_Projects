@@ -498,8 +498,6 @@
   }
 
 
-
-
   .skills-container{
     position: relative;
     display: flex;
@@ -719,4 +717,52 @@
     .formfield {
       width: 90%;
     }
+  }
+
+
+  footer{
+    position: relative;
+    margin-top: -1px;
+    background-color: #343d68;
+    padding: 5rem;
+  }
+
+  .footer-wrapper{
+    display: flex;
+    gap: 1rem;
+    padding: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .link-wrapper{
+    display: flex;
+    gap: 1.2rem;
+
+  }
+
+  .link-wrapper div a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.6s;
+  }
+
+  .link-wrapper div a:hover{
+    color: var(--bgOrange);
+  }
+
+  .icon-wrapper{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .footer-faded-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    user-select: none;
+    font-size: 5em;
+    color: #535c87;    
+    font-weight: bold;
   }
